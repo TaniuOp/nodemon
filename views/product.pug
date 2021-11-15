@@ -1,0 +1,22 @@
+doctype html
+html
+   head
+      title="Vista Producto"
+   body
+        include ./header.pug 
+        h3 Detalle de producto 
+        p Se renderzan los campos del producto
+        p Se crea una plantilla para usarlo con todos los productos
+        section  
+            each product in products 
+               article 
+                  h2 Producto #{product.id -1}
+                  p titulo: #{product.title} 
+                  p precio: #{product.price}
+                  p descripcion: #{product.description}
+                  img(src=product.image, alt=product.category)
+
+        include ./footer.pug 
+
+
+
