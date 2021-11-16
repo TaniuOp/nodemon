@@ -19,6 +19,7 @@
   "homepage": "https://github.com/TaniuOp/nodemon#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
     "pug": "^3.0.2"
   }
 }
